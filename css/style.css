@@ -124,8 +124,8 @@ i{
   
 .card .card-discount-badge {
   position: absolute;
-  top: 260px;
-  right: 170px;
+  top: 360px;
+  right: 250px;
   background-color: rgb(244, 19, 7);
   color: white;
   padding: 3px 10px;
@@ -134,8 +134,8 @@ i{
 
 .card .card-discount-sos{
   position: absolute;
-  top: 260px;
-  right: 94px;
+  top: 360px;
+  right: 174px;
   background-color: green;
   color: white;
   padding: 3px 10px;
