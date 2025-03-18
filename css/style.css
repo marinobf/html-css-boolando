@@ -27,13 +27,10 @@ a{
 .container{
   margin-left: auto;
   margin-right: auto;
-  /* padding-left: 0.5rem;
-  padding-right: 0.5rem; */
-  display: flex;
+  width: 100%;
   background-color: black;
-
 }
-.row{
+.list {
   display: flex;
   background-color: #fe6900;
   width: 100%;
@@ -44,12 +41,15 @@ a{
   
   
 }
-.row ul{
+.list ul{
   text-align: center;
   display: flex;
   flex-direction: row;
   list-style: none;
-  
+  padding-left: 50px;
+}
+li{
+  padding: 5px;
 }
 
 .container .icona-left{
@@ -62,11 +62,85 @@ i{
   padding-left: 10px;
   color: white;
 }
-li{
+.list{
   padding-left: 10px;
   color: white;
+  
 }
-.row img{
-  width: 120px;
+.list img{
+  width: 140px;
   vertical-align: middle;
+  padding-right: 5px;
+  margin-left: 120px;
+}
+
+/* MAIN */
+
+.conta{
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.row{
+  display: flex;
+  gap: 1rem;
+
+}
+
+.card{
+  width: calc(100% / 3);
+  position: relative;
+  border: 1px solid grey;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.contain{
+  padding-top: 30px;
+  display: flex;
+  width: 900px;
+  /* background-color: aqua; */
+  margin-left: 60px;
+}
+.card .card-hover{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00000030;
+  justify-content: end;
+  /* align-items: center; */
+  color: red;
+  font-size: 1rem;
+}
+/* .card:hover .card-hover{
+  display: flex; */
+  
+.card .card-discount-badge {
+  position: absolute;
+  top: 260px;
+  right: 170px;
+  background-color: rgb(244, 19, 7);
+  color: white;
+  padding: 3px 10px;
+  font-size: 10px;
+}
+
+.card .card-discount-sos{
+  position: absolute;
+  top: 260px;
+  right: 94px;
+  background-color: green;
+  color: white;
+  padding: 3px 10px;
+  font-size: 10px;
+}
+.euro{
+  color: red;
 }
